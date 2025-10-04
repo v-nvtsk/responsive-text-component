@@ -1,0 +1,31 @@
+.responsiveTextContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.responsiveTextItem {
+  position: absolute;
+  visibility: hidden;
+
+  &.isVisible {
+    position: relative;
+    visibility: visible;
+  }
+}
+
+.alignLeft {
+  justify-content: flex-start;
+}
+
+.alignCenter {
+  justify-content: center;
+}
+
+.alignRight {
+  justify-content: flex-end;
+}
